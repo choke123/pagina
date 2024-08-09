@@ -76,22 +76,40 @@
                 ></a-image>
             </a-marker>
             <a-entity camera></a-entity>
-
+        
+       
             <a-assets>
-              <a-asset-item
-                  id="animated-asset"
-                  src="assets/balon.glb"
-              ></a-asset-item>
-          </a-assets>
+                <a-asset-item
+                    id="animated-asset"
+                    src="assets/balon.glb"
+                ></a-asset-item>
+            </a-assets>
 
-              <a-entity
-                  look-at="[gps-camera]"
-                  animation-mixer="loop: repeat"
-                  gltf-model="#animated-asset"
-                  scale="0.900 0.900 0.900"
-                  gps-entity-place="latitude: 7.89931; longitude: -72.503091;"
-              ></a-entity>
-          <a-camera gps-camera rotation-reader></a-camera>
+                <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.900 0.900 0.900"
+                    gps-entity-place="latitude: 7.89931; longitude: -72.503091;"
+                ></a-entity>
+
+                <a-assets>
+                    <a-asset-item
+                        id="animated-asset"
+                        src="assets/balon.glb"
+                    ></a-asset-item>
+                </a-assets>
+    
+                    <a-entity
+                        look-at="[gps-camera]"
+                        animation-mixer="loop: repeat"
+                        gltf-model="#animated-asset"
+                        scale="0.900 0.900 0.900"
+                        gps-entity-place="latitude:7.884445; longitude: -72.501092;"
+                    ></a-entity>
+        
+
+            <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
   <script>
     document.getElementById('regresarMapa').addEventListener('click', function() {
