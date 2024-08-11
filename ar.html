@@ -115,11 +115,7 @@
     document.getElementById('regresarMapa').addEventListener('click', function() {
       window.location.href = 'index.html';
     });
-
-    document.querySelector('[arjs]').addEventListener('camera-init', (event) => {
-      const constraints = event.detail.cameras[0].constraints;
-      constraints.facingMode = { exact: "environment" }; // Configura la cámara trasera
-    });
+    
   </script>
 </body>
 </html>
