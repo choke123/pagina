@@ -10,112 +10,113 @@
   <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
   <link rel="stylesheet" href="estilos.css">
 </head>
-<body style="margin: 0; overflow: hidden;">
+<body  style="margin: 0; overflow: hidden;">
   <button id="regresarMapa">Regresar al Mapa</button>
-  
   <a-scene
-    vr-mode-ui="enabled: false;"
-    loading-screen="enabled: false;"
-    arjs="trackingMethod: best; sourceType: environment; debugUIEnabled: true;"
-    id="scene"
-    embedded
-    gesture-detector
-  >
+            vr-mode-ui="enabled: false;"
+            loading-screen="enabled: false;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            id="scene"
+            embedded
+            gesture-detector
+        >
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="../assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-image
+                    src="../assets/asset.jpeg"
+                    scale="5 5 5 "
+                    class="clickable"
+                    rotation="-90 0 0"
+                    gesture-handler
+                ></a-image>
+            </a-marker>
+            <a-marker
+            id="animated-marker1"
+            type="pattern"
+            preset="custom"
+            url="../assets/405.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="markerA"
+        >
+            <a-image
+                src="../assets/405.jpeg"
+                scale="5 5 5 "
+                class="clickable"
+                rotation="-90 0 0"
+                gesture-handler
+            ></a-image>
+        </a-marker>
+            
+        <a-marker
+                id="animated-marker2"
+                type="pattern"
+                preset="custom"
+                url="assets/prueba.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-image
+                    src="assets/soporte.jpeg"
+                    scale="5 5 5 "
+                    class="clickable"
+                    rotation="-90 0 0"
+                    gesture-handler
+                ></a-image>
+            </a-marker>
+            <a-entity camera></a-entity>
+        
+       
+            <a-assets>
+                <a-asset-item
+                    id="animated-asset"
+                    src="assets/balon.glb"
+                ></a-asset-item>
+            </a-assets>
 
-    <!-- Marcador 1 -->
-    <a-marker
-      id="marker1"
-      type="pattern"
-      preset="custom"
-      url="assets/marker.patt" 
-      raycaster="objects: .clickable"
-      emitevents="true"
-      cursor="fuse: false; rayOrigin: mouse;"
-    >
-      <a-image
-        src="assets/asset.jpeg"
-        scale="5 5 5"
-        class="clickable"
-        rotation="-90 0 0"
-        gesture-handler
-      ></a-image>
-    </a-marker>
+                <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.900 0.900 0.900"
+                    gps-entity-place="latitude: 7.89931; longitude: -72.503091;"
+                ></a-entity>
 
-    <!-- Marcador 2 -->
-    <a-marker
-      id="marker2"
-      type="pattern"
-      preset="custom"
-      url="assets/405.patt"
-      raycaster="objects: .clickable"
-      emitevents="true"
-      cursor="fuse: false; rayOrigin: mouse;"
-    >
-      <a-image
-        src="assets/405.jpeg"
-        scale="5 5 5"
-        class="clickable"
-        rotation="-90 0 0"
-        gesture-handler
-      ></a-image>
-    </a-marker>
+                <a-assets>
+                    <a-asset-item
+                        id="animated-asset1"
+                        src="assets/balon.glb"
+                    ></a-asset-item>
+                </a-assets>
     
-    <!-- Marcador 3 -->
-    <a-marker
-      id="marker3"
-      type="pattern"
-      preset="custom"
-      url="assets/prueba.patt"
-      raycaster="objects: .clickable"
-      emitevents="true"
-      cursor="fuse: false; rayOrigin: mouse;"
-    >
-      <a-image
-        src="assets/soporte.jpeg"
-        scale="5 5 5"
-        class="clickable"
-        rotation="-90 0 0"
-        gesture-handler
-      ></a-image>
-    </a-marker>
-    
-    <!-- Modelo GPS 1 -->
-    <a-assets>
-      <a-asset-item
-        id="animated-asset1"
-        src="assets/balon.glb"
-      ></a-asset-item>
-    </a-assets>
-    <a-entity
-      look-at="[gps-camera]"
-      animation-mixer="loop: repeat"
-      gltf-model="#animated-asset1"
-      scale="0.900 0.900 0.900"
-      gps-entity-place="latitude: 7.89931; longitude: -72.503091;"
-    ></a-entity>
+                    <a-entity
+                        look-at="[gps-camera]"
+                        animation-mixer="loop: repeat"
+                        gltf-model="#animated-asset"
+                        scale="0.900 0.900 0.900"
+                        gps-entity-place="latitude:7.884445; longitude: -72.501092;"
+                    ></a-entity>
+        
 
-    <!-- Modelo GPS 2 -->
-    <a-assets>
-      <a-asset-item
-        id="animated-asset2"
-        src="assets/balon.glb"
-      ></a-asset-item>
-    </a-assets>
-    <a-entity
-      look-at="[gps-camera]"
-      animation-mixer="loop: repeat"
-      gltf-model="#animated-asset2"
-      scale="0.900 0.900 0.900"
-      gps-entity-place="latitude:7.884445; longitude: -72.501092;"
-    ></a-entity>
-    
-    <a-camera gps-camera rotation-reader></a-camera>
-  </a-scene>
-  
+            <a-camera gps-camera rotation-reader></a-camera>
+        </a-scene>
   <script>
     document.getElementById('regresarMapa').addEventListener('click', function() {
       window.location.href = 'index.html';
     });
+
+    
   </script>
 </body>
 </html>
