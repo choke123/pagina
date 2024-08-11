@@ -88,7 +88,20 @@
                         scale="0.900 0.900 0.900"
                         gps-entity-place="latitude:7.884445; longitude: -72.501092;"
                     ></a-entity>
-        
+        <a-assets>
+                    <a-asset-item
+                        id="animated-asset2"
+                        src="assets/balon.glb"
+                    ></a-asset-item>
+                </a-assets>
+    
+                    <a-entity
+                        look-at="[gps-camera]"
+                        animation-mixer="loop: repeat"
+                        gltf-model="#animated-asset2"
+                        scale="0.900 0.900 0.900"
+                        gps-entity-place="latitude:7.8818345; longitude: -72.5055289;"
+                    ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
