@@ -66,7 +66,7 @@
             id="marker2"
         >
             <a-image
-                src="assets/soporte.jpg"
+                src="assets/bañosm.jpeg"
                 scale="5 5 5 "
                 class="clickable"
                 rotation="-90 0 0"
@@ -74,7 +74,26 @@
             ></a-image>
         </a-marker>
             <a-entity camera></a-entity>
+             <a-assets>
+                    <a-asset-item
+                        id="animated-asset1"
+                        src="assets/balon.glb"
+                    ></a-asset-item>
+                </a-assets>
+    
+                    <a-entity
+                        look-at="[gps-camera]"
+                        animation-mixer="loop: repeat"
+                        gltf-model="#animated-asset"
+                        scale="0.900 0.900 0.900"
+                        gps-entity-place="latitude:7.884445; longitude: -72.501092;"
+                    ></a-entity>
+        
+
+            <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
+        </a-scene>
+        
         <script>
     document.getElementById('regresarMapa').addEventListener('click', function() {
       window.location.href = 'index.html';
