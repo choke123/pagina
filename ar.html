@@ -36,6 +36,7 @@
                     gesture-handler
                 ></a-image>
             </a-marker>
+           
             <a-marker
             id="animated-marker1"
             type="pattern"
@@ -54,7 +55,24 @@
                 gesture-handler
             ></a-image>
         </a-marker>
-        
+         <a-marker
+            id="animated-marker2"
+            type="pattern"
+            preset="custom"
+            url="assets/esperanza.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="marker2"
+        >
+            <a-image
+                src="assets/soporte.jpg"
+                scale="5 5 5 "
+                class="clickable"
+                rotation="-90 0 0"
+                gesture-handler
+            ></a-image>
+        </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
         <script>
