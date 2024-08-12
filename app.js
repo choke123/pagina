@@ -72,7 +72,7 @@ var markerCanchain = new mapboxgl.Marker({
   anchor: 'bottom' // Anclar el icono al centro inferior del marcador
 })
   .setLngLat([-72.503403, 7.900761]) // Coordenadas del marcador
-  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Canchain</h3><p>Cancha de industria.</p><img src="img/canchain.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
+  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Cancha Industria</h3><p>Cancha de industria.</p><img src="img/canchain.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
   .addTo(map);
 
 
@@ -190,7 +190,7 @@ var places = [
   },
   {
     name: "CLUB",
-    coordinates: [-72.503292, 7.898611],
+    coordinates: [-72.5035174, 7.8988864],
     icon: "img/club.jpeg",
     description: "Club."
   },
@@ -208,7 +208,7 @@ var places = [
   },
   {
     name: "TECNOPARQUE",
-    coordinates: [-72.503292, 7.898611],
+    coordinates: [-72.5031692, 7.8982548],
     icon: "img/tecno.jpeg",
     description: "TECNOPARQUE."
   },
