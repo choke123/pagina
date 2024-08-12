@@ -101,7 +101,7 @@ var markerEntrada = new mapboxgl.Marker({
   element: createCustomIcon('img/entrada.jpeg'), // Ruta de la imagen del icono
   anchor: 'bottom' // Anclar el icono al centro inferior del marcador
 })
-  .setLngLat([-72.503403, 7.900761]) // Coordenadas del marcador
+  .setLngLat([-72.5036016, 7.9015317]) // Coordenadas del marcador
   .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Entrada</h3><p> Entrada de los Aprendices.</p><img src="img/entrada.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
   .addTo(map);
 
@@ -121,7 +121,7 @@ var markerTecnoparque = new mapboxgl.Marker({
   element: createCustomIcon('img/tecno.jpeg'), // Ruta de la imagen del icono
   anchor: 'bottom' // Anclar el icono al centro inferior del marcador
 })
-  .setLngLat([-72.503292, 7.898611]) // Coordenadas del marcador
+  .setLngLat([-72.5031692, 7.8982548]) // Coordenadas del marcador
   .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Tecnoparque </h3><p> Tecnoparque.</p><img src="img/tecno.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
   .addTo(map);
 
@@ -143,7 +143,7 @@ var markerClub = new mapboxgl.Marker({
   element: createCustomIcon('img/club.jpeg'), // Ruta de la imagen del icono
   anchor: 'bottom' // Anclar el icono al centro inferior del marcador
 })
-  .setLngLat([-72.503292, 7.898611]) // Coordenadas del marcador
+  .setLngLat([-72.5035174, 7.8988864]) // Coordenadas del marcador
   .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Club </h3><p> Club.</p><img src="img/club.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
   .addTo(map);
 
