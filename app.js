@@ -29,7 +29,7 @@ function successLocation(position) {
   }
 
   // Centrar el mapa en la ubicación actual
-   
+   map.setCenter([longitude, latitude]);
 }
 
 function errorLocation() {
