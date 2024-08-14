@@ -8,7 +8,7 @@ var map = new mapboxgl.Map({
 
 // Crear marcador de ubicación actual
 var userLocationMarker = null;
-
+let shouldCenterMap = true;
 // Obtener la ubicación actual del usuario
 navigator.geolocation.watchPosition(successLocation, errorLocation, { enableHighAccuracy: true });
 
@@ -30,6 +30,8 @@ function successLocation(position) {
 
   // Centrar el mapa en la ubicación actual
    map.setCenter([longitude, latitude]);
+  map.on('move', () => {
+    shouldCenterMap = false; // Desactiva el centrado después de que el usuario mueve el mapa
 }
 
 function errorLocation() {
