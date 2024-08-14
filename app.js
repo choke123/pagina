@@ -32,6 +32,7 @@ function successLocation(position) {
    map.setCenter([longitude, latitude]);
   map.on('move', () => {
     shouldCenterMap = false; // Desactiva el centrado después de que el usuario mueve el mapa
+});
 }
 
 function errorLocation() {
