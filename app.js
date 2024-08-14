@@ -162,14 +162,7 @@ var markerCafeteria = new mapboxgl.Marker({
   .addTo(map);
 
 
-// Marcador Baños
-var markerBanos = new mapboxgl.Marker({
-  element: createCustomIcon('img/baños.jpeg'), // Ruta de la imagen del icono
-  anchor: 'bottom' // Anclar el icono al centro inferior del marcador
-})
-  .setLngLat([-72.5035325, 7.9006852]) // Coordenadas del marcador
-  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Baños</h3><p>Baños de caballero.</p><img src="img/baños.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
-  .addTo(map);
+
   
   // Lista de lugares con sus marcadores
 var places = [
@@ -185,12 +178,7 @@ var places = [
     icon: "img/cafeteria.jpg",
     description: "Biblioteca de industria."
   },
-  {
-    name: "BAÑOS",
-    coordinates: [-72.5035325, 7.9006852],
-    icon: "img/baños.jpeg",
-    description: "Baños de caballero."
-  },
+  
   {
     name: "CLUB",
     coordinates: [-72.5035174, 7.8988864],
