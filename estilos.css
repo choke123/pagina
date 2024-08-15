@@ -76,7 +76,7 @@ body {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid white;
+  border-top: 10px solid red;
 }
 
 #mostrarAR:hover, #regresarMapa:hover {
