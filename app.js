@@ -167,7 +167,7 @@ var markerEntrada = new mapboxgl.Marker({
   anchor: 'bottom' // Anclar el icono al centro inferior del marcador
 })
   .setLngLat([-72.5036467, 7.9004169]) // Coordenadas del marcador
-  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Entrada</h3><p> Entrada de los Aprendices.</p><img src="img/parque.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
+  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Entrada</h3><p> PARQUEADERO.</p><img src="img/parque.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
   .addTo(map);
 
 
