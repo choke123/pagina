@@ -190,8 +190,8 @@ var places = [
    {
     name: "PARQUEADERO",
     coordinates: [-72.5036467, 7.9004169],
-    icon: "img/cafeteria.jpg",
-    description: "Biblioteca de industria."
+    icon: "img/Pparque.jpeg",
+    description: "PARQUEADERO."
   },
   
   {
