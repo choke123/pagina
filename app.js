@@ -197,6 +197,12 @@ var places = [
     description: "Biblioteca de industria."
   },
    {
+    name: "INSTRUCTORES",
+    coordinates: [-72.5036467, 7.9004169],
+    icon: "img/parque.jpeg",
+    description: "INSTRUCTORES."
+  },
+   {
     name: "PARQUEADERO",
     coordinates: [-72.5032424, 7.9001685],
     icon: "img/parque.jpeg",
