@@ -140,15 +140,23 @@ var markerTecnoparque = new mapboxgl.Marker({
   .addTo(map);
 
 
-// Marcador parqueadero
+// ENTRADA INSTRUCTORES
 var markerEntrada = new mapboxgl.Marker({
   element: createCustomIcon('img/parque.jpeg'), // Ruta de la imagen del icono
   anchor: 'bottom' // Anclar el icono al centro inferior del marcador
 })
   .setLngLat([-72.5036467, 7.9004169]) // Coordenadas del marcador
-  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>Entrada</h3><p> PARQUEADERO.</p><img src="img/parque.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
+  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>INSTRUCTORES</h3><p> INSTRUCTORES.</p><img src="img/parque.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
   .addTo(map);
 
+// Marcador parqueadero
+var markerEntrada = new mapboxgl.Marker({
+  element: createCustomIcon('img/parque.jpeg'), // Ruta de la imagen del icono
+  anchor: 'bottom' // Anclar el icono al centro inferior del marcador
+})
+  .setLngLat([-72.5032424, 7.9001685]) // Coordenadas del marcador
+  .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h3>PARQUEADERO.</h3><p> PARQUEADERO.</p><img src="img/parque.jpeg" alt="Imagen del lugar" style="max-width: 100%; height: auto;">'))
+  .addTo(map);
 
 // Marcador Club
 var markerClub = new mapboxgl.Marker({
@@ -190,8 +198,8 @@ var places = [
   },
    {
     name: "PARQUEADERO",
-    coordinates: [-72.5036467, 7.9004169],
-    icon: "img/Pparque.jpeg",
+    coordinates: [-72.5032424, 7.9001685],
+    icon: "img/parque.jpeg",
     description: "PARQUEADERO."
   },
   
