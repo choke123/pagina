@@ -193,7 +193,7 @@ var places = [
   {
     name: "BIBLIOTECA",
     coordinates: [-72.503483, 7.900696],
-    icon: "img/cafeteria.jpg",
+    icon: "img/biblioteca.jpg",
     description: "Biblioteca de industria."
   },
    {
