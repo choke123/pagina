@@ -213,7 +213,7 @@ var places = [
    {
     name: "PARQUEADERO ADMINISTRATIVO",
     coordinates: [-72.5033513, 7.9006241],
-    icon: "img/parque.jpeg",
+    icon: "img/parqueaderoadm.jpeg",
     description: "PARQUEADERO ADMINISTRATIVO."
   },
    {
