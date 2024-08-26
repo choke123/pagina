@@ -199,7 +199,7 @@ var places = [
    {
     name: "INSTRUCTORES",
     coordinates: [-72.5036467, 7.9004169],
-    icon: "img/parque.jpeg",
+    icon: "img/instructores.jpeg",
     description: "INSTRUCTORES."
   },
    {
