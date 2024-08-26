@@ -101,7 +101,7 @@ var markerCanchacomer = new mapboxgl.Marker({
 
 // Marcador Entrada de los Aprendices
 var markerEntrada = new mapboxgl.Marker({
-  element: createCustomIcon('img/instructores.jpeg'), // Ruta de la imagen del icono
+  element: createCustomIcon('img/entrada.jpeg'), // Ruta de la imagen del icono
   anchor: 'bottom' // Anclar el icono al centro inferior del marcador
 })
   .setLngLat([-72.5036016, 7.9015317]) // Coordenadas del marcador
